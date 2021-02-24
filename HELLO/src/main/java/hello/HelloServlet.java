@@ -41,9 +41,10 @@ public class HelloServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet HelloServlet at " + request.getContextPath() + "</h1>");
-            out.println("<h1>Voltar a Pagina Inicial)" + "</h1>");
-            out.println("<p>" + "(<a href=.\\index.html\">Home</a>"+"</p>");
-                        
+            out.println("<form action=\"index.html\">\n" +
+"           <input type=\"submit\" value=\"Voltar a Página Incial\"/>\n" +
+"        </form>");
+         
             out.println("</body>");
             out.println("</html>");
         }
